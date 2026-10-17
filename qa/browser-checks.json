@@ -1,0 +1,182 @@
+{
+  "url": "https://sui-tasks.hutari0315.workers.dev/",
+  "testedAt": "2026-10-17T23:55:48.657Z",
+  "method": "Codex In-app Browser / CUA real clicks, typing, keyboard and drag",
+  "checks": [
+    {
+      "name": "初期フォーカス",
+      "pass": true
+    },
+    {
+      "name": "空入力は追加不可",
+      "pass": true
+    },
+    {
+      "name": "下書きの再読込保持",
+      "pass": true
+    },
+    {
+      "name": "メモの追加",
+      "pass": true
+    },
+    {
+      "name": "Ctrl+Enter追加",
+      "pass": true
+    },
+    {
+      "name": "追加メモの再読込保持",
+      "pass": true
+    },
+    {
+      "name": "右フリックで進行中",
+      "pass": true
+    },
+    {
+      "name": "右フリックで完了",
+      "pass": true
+    },
+    {
+      "name": "完了の右フリックは循環しない",
+      "pass": true
+    },
+    {
+      "name": "左フリックで戻す",
+      "pass": true
+    },
+    {
+      "name": "状態フィルター",
+      "pass": true
+    },
+    {
+      "name": "検索",
+      "pass": true
+    },
+    {
+      "name": "検索結果なし",
+      "pass": true
+    },
+    {
+      "name": "複数行編集と状態ボタン",
+      "pass": true
+    },
+    {
+      "name": "削除キャンセル",
+      "pass": true
+    },
+    {
+      "name": "通知が画面内に収まる",
+      "pass": true,
+      "details": {
+        "left": 16,
+        "right": 374,
+        "viewport": 390
+      }
+    },
+    {
+      "name": "削除取消の永続化",
+      "pass": true
+    },
+    {
+      "name": "Google認証未設定を明示",
+      "pass": true
+    },
+    {
+      "name": "Escapeでシートを閉じる",
+      "pass": true
+    },
+    {
+      "name": "フォーカス復帰・修正後",
+      "pass": true
+    },
+    {
+      "name": "320pxで横はみ出しなし・修正後",
+      "pass": true,
+      "details": {
+        "width": 320,
+        "viewport": 305,
+        "body": 305
+      }
+    },
+    {
+      "name": "375pxで横はみ出しなし・修正後",
+      "pass": true,
+      "details": {
+        "width": 375,
+        "viewport": 360,
+        "body": 360
+      }
+    },
+    {
+      "name": "390pxで横はみ出しなし・修正後",
+      "pass": true,
+      "details": {
+        "width": 390,
+        "viewport": 375,
+        "body": 375
+      }
+    },
+    {
+      "name": "768pxで横はみ出しなし・修正後",
+      "pass": true,
+      "details": {
+        "width": 768,
+        "viewport": 753,
+        "body": 753
+      }
+    },
+    {
+      "name": "1440pxで横はみ出しなし・修正後",
+      "pass": true,
+      "details": {
+        "width": 1440,
+        "viewport": 1425,
+        "body": 1425
+      }
+    },
+    {
+      "name": "公開版コンソールエラーなし",
+      "pass": true,
+      "details": {
+        "entries": 0
+      }
+    },
+    {
+      "name": "デスクトップで固定ナビと3件目が重ならない",
+      "pass": true,
+      "details": {
+        "lastTaskBottom": 703.171875,
+        "navTop": 747
+      }
+    },
+    {
+      "name": "公開版のJSON実ファイル書き出し",
+      "pass": true,
+      "details": {
+        "count": 3,
+        "deleted": false,
+        "internalDirty": false
+      }
+    }
+  ],
+  "resolvedFindings": [
+    {
+      "name": "シート閉鎖時にフォーカス復帰",
+      "pass": false
+    },
+    {
+      "name": "320pxで横はみ出しなし",
+      "pass": false,
+      "details": {
+        "body": 320,
+        "main": 320,
+        "overflow": ["MAIN", "ARTICLE", "ARTICLE", "ARTICLE"],
+        "viewport": 305
+      }
+    }
+  ],
+  "pending": [
+    "Google OAuth live sign-in",
+    "Authenticated cross-device cloud sync",
+    "Workers AI from authenticated UI"
+  ]
+}
